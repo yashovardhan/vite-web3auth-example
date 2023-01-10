@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { NodeGlobalsPolyfillPlugin } from "@esbuild-plugins/node-globals-polyfill";
 import { NodeModulesPolyfillPlugin } from "@esbuild-plugins/node-modules-polyfill";
 import rollupNodePolyFill from "rollup-plugin-node-polyfills";
 import builtins from "rollup-plugin-node-builtins";
@@ -41,7 +40,7 @@ export default defineConfig({
       zlib: "rollup-plugin-node-polyfills/polyfills/zlib",
       tty: "rollup-plugin-node-polyfills/polyfills/tty",
       domain: "rollup-plugin-node-polyfills/polyfills/domain",
-      buffer: "rollup-plugin-node-polyfills/polyfills/buffer-es6",
+      buffer: "rollup-plugin-node-polyfills/polyfills/buffer-es6",      
       process: "rollup-plugin-node-polyfills/polyfills/process-es6",
     },
   },
